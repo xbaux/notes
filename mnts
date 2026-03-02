@@ -1,0 +1,7 @@
+mount --mkdir --types proc /proc /mnt/gentoo/@/proc
+mount --mkdir --rbind /sys /mnt/gentoo/@/sys
+mount --mkdir --make-rslave /mnt/gentoo/@/sys
+mount --mkdir --rbind /dev /mnt/gentoo/@/dev
+mount --mkdir --make-rslave /mnt/gentoo/@/dev
+mount --mkdir --bind /run /mnt/gentoo/@/run
+mount --mkdir --make-slave /mnt/gentoo/@/run 

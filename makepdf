@@ -1,0 +1,3 @@
+#!/bin/bash
+pandoc $(find . -type f -name "*.md" | sort) -o buch.pdf
+
